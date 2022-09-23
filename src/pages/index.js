@@ -6,8 +6,6 @@ import fs from "fs";
 import { join } from "path";
 
 export async function getServerSideProps() {
-  // can be from a local file, database, anywhere
-
   const templatePath = join(process.cwd(), "src", "posts", "lorem.mdx");
 
   const source = fs.readFileSync(templatePath);

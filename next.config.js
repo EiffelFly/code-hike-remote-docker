@@ -1,7 +1,5 @@
 module.exports = {
   swcMinify: true,
   reactStrictMode: true,
-  experimental: {
-    outputStandalone: true,
-  },
+  output: "standalone",
 };
